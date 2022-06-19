@@ -1,0 +1,29 @@
+{
+  "name": "lawyerproject",
+  "version": "1.0.0",
+  "description": "Proyecto de Perfil de Abogada",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelGuevara25/lawyerProject.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Miguel Angel Guevara Tiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelGuevara25/lawyerProject/issues"
+  },
+  "homepage": "https://github.com/MiguelGuevara25/lawyerProject#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.3"
+  }
+}
