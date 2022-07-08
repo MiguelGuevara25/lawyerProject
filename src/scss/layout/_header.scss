@@ -1,0 +1,101 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.header {
+    @include m.tablet {
+        height: 60rem;
+    }
+
+    background-image: url(../../../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 70%;
+
+    .navegation {
+
+        @include m.tablet {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+        flex-direction: column;
+
+        .header__logo {
+
+            img {
+                width: 20rem;
+                height: 10rem;
+            }
+        }
+
+        .mobile-menu {
+
+            @include m.tablet {
+                display: none;
+            }
+
+            i {
+                color: v.$blanco;
+                font-size: 5rem;
+                margin: 2.5rem;
+            }
+        }
+
+        .show_nav {
+            display: flex;
+
+
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .text-principal {
+
+        @include m.tablet {
+            margin-top: 10rem;
+        }
+
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+}
+
+.bar-navegation {
+
+    display: none;
+    gap: 3.5rem;
+    flex-direction: column;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear;
+
+    @include m.tablet {
+        display: flex;
+        flex-direction: row;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    a {
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.85rem;
+        transform: scale(1.12);
+        transition: .6s transform;
+
+        &:hover {
+            color: v.$rojoOscuro;
+            transition: .5s color;
+        }
+    }
+}

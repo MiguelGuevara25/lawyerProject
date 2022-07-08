@@ -1,0 +1,110 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.section_form {
+
+    .section_form__contact {
+        padding: 0 2rem 2rem 2rem;
+
+        .form__title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 1.5rem 0;
+            font-size: 4.5rem;
+            color: v.$rojoOscuro;
+        }
+
+        .bg-contact {
+            background-image: url(../../../img/contac.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 80% center;
+            height: 40rem;
+        }
+
+        .form {
+            padding: 5rem;
+            background-color: v.$blanco;
+            border-radius: 1rem;
+            margin: -5rem auto 0 auto;
+            width: 95%;
+
+            .camp {
+
+                @include m.tablet {
+                    flex-direction: row;
+                }
+
+                display: flex;
+                margin-bottom: 1.5rem;
+                color: v.$negro;
+                font-size: 1.8rem;
+                flex-direction: column;
+
+                input,
+                textarea {
+                    border: 1px solid #e1e1e1;
+                    width: 100%;
+                }
+
+                textarea {
+                    height: 20rem;
+                }
+
+                label {
+
+                    @include m.tablet {
+                        text-align: right;
+                        padding: 1rem 2rem 1rem 0;
+                        flex: 0 0 9rem;
+                    }
+
+                    flex: 0 0 0;
+                }
+            }
+
+            .botons {
+
+                @include m.tablet {
+                    text-align: left;
+                    width: 100%;
+                }
+
+                text-align: center;
+
+                .boton {
+
+                    @include m.tablet {
+                        margin-left: 8.9rem;
+                    }
+
+                    color: rgba(128, 128, 128, 0.7);
+                    text-align: center;
+                    padding: 1rem 3rem;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: .5rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .wsp {
+                    margin-top: 1rem;
+                    color: v.$blanco;
+                    background-color: #35BC48;
+                    font-size: 2rem;
+
+                    span {
+                        font-family: 'Kanit', sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

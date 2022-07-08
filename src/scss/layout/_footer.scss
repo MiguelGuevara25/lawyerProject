@@ -1,0 +1,20 @@
+@use 'base/variables'as v;
+
+.footer {
+    background-color: v.$gris;
+    padding: 2rem;
+    color: v.$blanco;
+    text-align: center;
+}
+
+.fixed{
+    position: fixed;
+    background-color: #35BC48;
+    color: v.$blanco;
+    border-radius: 50%;
+    padding: 1.5rem;
+    top: 80%;
+    right: 0%;
+    font-size: 5rem;
+    margin-right: .8rem;
+}

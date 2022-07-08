@@ -7,14 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="fontIcon/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="contenedor">
-            <h1>hla</h1>
+        <div class="content">
+            <div class="navegation">
+                <a href="#" class="header__logo">
+                    <img width="200" height="300" src="img/banner.jpg" alt="logo">
+                </a>
+
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <nav class="bar-navegation">
+                    <a href="#">Inicio</a>
+                    <a href="#services">Mis Servicios</a>
+                    <a href="#contact">Contáctame</a>
+                </nav>
+            </div>
+
+            <div class="text-principal">
+                <h1>Estudio P & S <br> visión legal</h1>
+            </div>
         </div>
     </header>
+
+    <main class="main">
+        <div class="content">
+            <section class="information-mision_vision">
+                <div class="mision">
+                    <h2>Misión</h2>
+                    <p>Ser un estudio de consultoría legal caracterizado por su alta calidad en experiencia, ética y
+                        profesionalismo, Nuestro objetivo principal es defender los derechos de nuestros clientes
+                        brindándoles soluciones integrales, participando activamente en el desarrollo empresarial y
+                        personal de nuestros clientes y cuya característica es tener un trato personalizado.</p>
+                </div>
+
+                <div class="vision">
+                    <h2>Visión</h2>
+                    <p>Aspiramos a posicionarnos como un estudio líder en las diferentes ramas del derecho, ser
+                        reconocidos por sus altos estándares de calidad y profesionalismo por reputación propia y de sus
+                        clientes.</p>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="content services_information">
+            <h2 class="service__title">nuestros servicios</h2>
+            <div class="services" id="services">
+                <div class="picture service_1">
+                    <h2>Alimentos</h2>
+                </div>
+                <div class="picture service_2">
+                    <h2>Régimen de visitas o Tenencia</h2>
+                </div>
+                <div class="picture service_3">
+                    <h2>Obligación de dar suma de dinero</h2>
+                </div>
+                <div class="picture service_4">
+                    <h2>Divorcio municipal, notarial y/o judicial</h2>
+                </div>
+                <div class="picture service_5">
+                    <h2>Desalojo</h2>
+                </div>
+                <div class="picture service_6">
+                    <h2>Constitución de empresas e inscripción de tu marca</h2>
+                </div>
+                <div class="picture service_7">
+                    <h2>Testamento y Sucesión intestada</h2>
+                </div>
+                <div class="picture service_8">
+                    <h2>INDECOPI</h2>
+                </div>
+                <div class="picture service_9">
+                    <h2>Derecho Laboral</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="section_form" id="contact">
+                <div class="content section_form__contact">
+                    <h2 class="form__title">Contáctame</h2>
+                    <div class="bg-contact"></div>
+                    <form class="form">
+                        <div class="camp">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+
+                        <div class="camp">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Correo">
+                        </div>
+
+                        <div class="camp">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea cols="64" rows="10" placeholder="Escríbenos tu mensaje..."></textarea>
+                        </div>
+
+                        <div class="botons">
+                            <div>
+                                <input type="submit" value="Enviar" class="boton enviar">
+                            </div>
+
+                            <div>
+                                <a href="https://wa.me/+51984106942" target="_blank"><i
+                                        class="fa-brands fa-whatsapp boton wsp">
+                                        <span>Contáctanos al WhatsApp</span> </i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="content">
+            <p>2022 <span>&#169</span> Todos los derechos reservados. Estudio P & S Visión Legal</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+51984106942" target="_blank">
+        <i class="fa-brands fa-whatsapp boton wsp fixed"></i>
+    </a>
+    
+    <script src="build/js/app.js"></script>
 </body>
 
 </html>

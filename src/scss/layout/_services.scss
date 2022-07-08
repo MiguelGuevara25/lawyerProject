@@ -1,0 +1,102 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.service__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin: 5rem;
+    color: v.$rojoOscuro;
+}
+
+.services {
+
+    @include m.tablet {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include m.tabletC {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include m.phoneC {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    display: grid;
+    gap: 2.4rem;
+    grid-template-rows: none;
+    margin-bottom: 10rem;
+
+    .service_1 {
+        background-image: url(../../../img/1.png);
+    }
+
+    .service_2 {
+        background-image: url(../../../img/2.png);
+    }
+
+    .service_3 {
+        background-image: url(../../../img/3.png);
+    }
+
+    .service_4 {
+        background-image: url(../../../img/4.png);
+    }
+
+    .service_5{
+        background-image: url(../../../img/5.png);
+    }
+
+    .service_6{
+        background-image: url(../../../img/6.png);
+    }
+
+    .service_7{
+        background-image: url(../../../img/7.png);
+    }
+
+    .service_8 {
+        background-image: url(../../../img/8.png);
+    }
+
+    .service_9{
+        background-image: url(../../../img/9.png);
+    }
+
+    .service_1,
+    .service_2,
+    .service_3,
+    .service_4,
+    .service_5,
+    .service_6,
+    .service_7,
+    .service_8,
+    .service_9 {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 30rem;
+        position: relative;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            text-align: center;
+            color: v.$blanco;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.12);
+            transition: .6s transform;
+        }
+    }
+}
