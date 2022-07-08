@@ -2,7 +2,7 @@ function starApp(){createGalery(),scrollNav(),menuMobile()}
 //!Se configura el scroll
 function scrollNav(){document.querySelectorAll(".bar-navegation a").forEach(e=>{e.addEventListener("click",(function(e){e.preventDefault();const o=e.target.attributes.href.value;document.querySelector(o).scrollIntoView({behavior:"smooth"})}))})}function createGalery(){document.querySelector(".services");for(let e=1;e<=9;e++){document.querySelector(".service_"+e).onclick=function(){showImage(e)}}}function showImage(e){
 //!Se crea la imagen que saldrá después del click
-const o=document.createElement("DIV");o.classList.add("overlay__image__service"),o.innerHTML=`<img loading="lazy" width="200" height="300" src="img/${e}.png" alt="prueba">`;const n=document.createElement("H2");n.classList.add("overlay_title_service");const a=document.createElement("P");a.classList.add("overlay__text__service");
+const o=document.createElement("DIV");o.classList.add("overlay__image__service"),o.innerHTML=`<img loading="lazy" width="200" height="300" src="build/img/${e}.png" alt="prueba">`;const n=document.createElement("H2");n.classList.add("overlay_title_service");const a=document.createElement("P");a.classList.add("overlay__text__service");
 //!Acá se creará un contenedor dentro del overlay
 const t=document.createElement("DIV");t.classList.add("content__overlay"),t.appendChild(o),t.appendChild(n),t.appendChild(a);
 //!Ponemos adentro del overlay la imagen que se creo con el click
