@@ -42,7 +42,7 @@ function showImage(id) {
     //!Se crea la imagen que saldrá después del click
     const image = document.createElement('DIV');
     image.classList.add('overlay__image__service');
-    image.innerHTML = `<img loading="lazy" width="200" height="300" src="img/${id}.png" alt="prueba">`;
+    image.innerHTML = `<img loading="lazy" width="200" height="300" src="build/img/${id}.png" alt="prueba">`;
 
     const titleOverlay = document.createElement('H2');
     titleOverlay.classList.add('overlay_title_service');
