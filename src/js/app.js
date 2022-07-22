@@ -40,9 +40,13 @@ function createGalery() {
 function showImage(id) {
 
     //!Se crea la imagen que saldrá después del click
-    const image = document.createElement('DIV');
+    const image = document.createElement('PICTURE');
     image.classList.add('overlay__image__service');
-    image.innerHTML = `<img loading="lazy" width="200" height="300" src="build/img/${id}.png" alt="prueba">`;
+
+    image.innerHTML = `
+    <source srcset="build/img/${id}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/${id}.png" alt="prueba">
+    `;
 
     const titleOverlay = document.createElement('H2');
     titleOverlay.classList.add('overlay_title_service');

@@ -21,7 +21,7 @@
     .content__overlay {
 
         @include m.tablet {
-            width: 52%;
+            width: 50%;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
         }
@@ -47,7 +47,7 @@
             text-align: center;
 
             img{
-                width: 80%;
+                width: 100%;
                 border-radius: 1rem;
             }
         }
